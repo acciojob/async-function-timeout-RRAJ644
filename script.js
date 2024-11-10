@@ -4,10 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const button = document.querySelector('#btn')
   const output = document.querySelector('#output')
 
+  button.addEventListener('click', async (e) => {
   const text = textInput?.value
   const delay = parseInt(delayInput?.value, 10)
 
-  button.addEventListener('click', async (e) => {
     e.preventDefault()
 
     if (isNaN(delay)) return
